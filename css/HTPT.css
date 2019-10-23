@@ -1,30 +1,100 @@
+.container {
+  max-width: 1200px;
+  margin: auto; }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 98%; } }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 98%; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 1200px; } }
+
+@media (max-width: 576px) {
+  #chart-container {
+    height: 30%;
+    width: 100%; } }
+
+@media (min-width: 576px) {
+  #chart-container {
+    height: 30%;
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  #chart-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 300px; } }
+
 .chart {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (min-width: 768px) {
+    .chart {
+      height: 90vh; } }
 
 .control {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 576px) {
+    .control {
+      width: 100%;
+      height: 100vh;
+      flex-wrap: wrap; } }
+  @media (min-width: 576px) {
+    .control {
+      width: 50%; } }
+  @media (min-width: 768px) {
+    .control {
+      width: 100%; } }
 
 .led, .tivi, .air-conditioner {
   margin-right: 20px;
   border-radius: 20px;
   background: #eee;
-  width: 300px;
   padding: 10px 50px;
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+  @media (max-width: 576px) {
+    .led, .tivi, .air-conditioner {
+      width: 100%;
+      padding: 7px 10px; } }
+  @media (min-width: 576px) {
+    .led, .tivi, .air-conditioner {
+      width: 20%; } }
+  @media (min-width: 768px) {
+    .led, .tivi, .air-conditioner {
+      width: 100%; } }
   .led h3, .tivi h3, .air-conditioner h3 {
     color: #4949ce;
     font-size: 24px; }
+    @media (max-width: 576px) {
+      .led h3, .tivi h3, .air-conditioner h3 {
+        font-size: 12px; } }
+    @media (min-width: 576px) {
+      .led h3, .tivi h3, .air-conditioner h3 {
+        font-size: 14px; } }
+    @media (min-width: 768px) {
+      .led h3, .tivi h3, .air-conditioner h3 {
+        font-size: 24px; } }
   .led i, .tivi i, .air-conditioner i {
     font-size: 80px;
     margin-bottom: 10px; }
+    @media (max-width: 576px) {
+      .led i, .tivi i, .air-conditioner i {
+        font-size: 40px; } }
+    @media (min-width: 576px) {
+      .led i, .tivi i, .air-conditioner i {
+        font-size: 50px; } }
+    @media (min-width: 768px) {
+      .led i, .tivi i, .air-conditioner i {
+        font-size: 80px; } }
   .led button, .tivi button, .air-conditioner button {
     border: none;
     background: none;
@@ -32,10 +102,30 @@
     padding: 4px;
     background: #333333;
     transition: all 0.5s;
-    color: white; }
+    color: white;
+    width: 100%;
+    font-size: 20px; }
     .led button:hover, .tivi button:hover, .air-conditioner button:hover {
       background: red; }
+    @media (max-width: 576px) {
+      .led button, .tivi button, .air-conditioner button {
+        font-size: 8px; } }
+    @media (min-width: 576px) {
+      .led button, .tivi button, .air-conditioner button {
+        font-size: 10px; } }
+    @media (min-width: 768px) {
+      .led button, .tivi button, .air-conditioner button {
+        font-size: 20px; } }
 
 h1 {
   color: red;
   font-size: 20px; }
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 12px; } }
+  @media (min-width: 576px) {
+    h1 {
+      font-size: 14px; } }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 20px; } }

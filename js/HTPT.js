@@ -206,8 +206,8 @@ $(document).ready(function () {
         var firebaseChart = new FusionCharts({
             type: 'area2d',
             renderAt: 'chart-container',
-            width: '1000',
-            height: '400',
+            width: '90%',
+            height: '60%',
             dataFormat: 'json',
             dataSource: {
                 "chart": {

@@ -46,7 +46,7 @@ $(document).ready(function () {
                 timeLed1 = (timeoff1 - timeon1) / 1000
                 console.log("kq1 ", timeLed1);
                 dem1 = dem1 + 1
-                timeLed1 = 0.1 * (timeLed1 / (3600))
+                timeLed1 = 0.1 * 0.001 * (timeLed1 / (3600))
                 // Math.ceil(timeLed1)
                 tong1 = tong1 + timeLed1
                 console.log("TONG BBBB ", tong1)
@@ -80,7 +80,7 @@ $(document).ready(function () {
                 timeLed2 = (timeoff2 - timeon2) / 1000
                 console.log("kq2 ", timeLed2);
                 dem2 = dem2 + 1
-                timeLed2 = 0.1 * (timeLed2 / (3600))
+                timeLed2 = 0.1 * 0.001 * (timeLed2 / (3600))
                 // Math.ceil(timeLed2)
                 tong1 = tong1 + timeLed2
                 console.log("TONG BBBB ", tong1)
@@ -112,7 +112,7 @@ $(document).ready(function () {
                 timeLed3 = (timeoff3 - timeon3) / 1000
                 dem3 = dem3 + 1
                 console.log("kq3 ", timeLed3);
-                timeLed3 = 0.1 * (timeLed3 / (3600))
+                timeLed3 = 0.1 * 0.001 * (timeLed3 / (3600))
                 // Math.ceil(timeLed3)
                 tong1 = tong1 + timeLed3
                 console.log("TONG BBBB ", tong1)

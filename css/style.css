@@ -1,0 +1,71 @@
+.f-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+.top {
+  background: url(../img/hero-1.jpg) no-repeat top center/cover;
+  padding-bottom: 80px; }
+  .top header {
+    padding-top: 40px; }
+    .top header .container .navbar ul {
+      display: flex; }
+      .top header .container .navbar ul li {
+        margin: 0px 20px; }
+        .top header .container .navbar ul li a {
+          position: relative;
+          padding: 30px 0px; }
+          .top header .container .navbar ul li a:hover::after {
+            width: 100%; }
+          .top header .container .navbar ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: green;
+            transition: all 0.5s; }
+  .top .fv {
+    margin-top: 10px; }
+    .top .fv .text {
+      flex-basis: 40%; }
+      .top .fv .text h1 {
+        color: #00A69B;
+        font-size: 48px;
+        font-weight: normal; }
+      .top .fv .text a {
+        color: white;
+        background: #00A69B;
+        margin-top: 40px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: inline-block; }
+    .top .fv .fv-img {
+      flex-basis: 570px;
+      margin-right: 6px; }
+
+.top-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #00a69b;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: all 1s;
+  cursor: pointer;
+  display: none; }
+  .top-button:hover {
+    background: black; }
+
+.ranh {
+  height: 1000px;
+  background: #fff; }

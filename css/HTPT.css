@@ -1,0 +1,41 @@
+.chart {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.control {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.led, .tivi, .air-conditioner {
+  margin-right: 20px;
+  border-radius: 20px;
+  background: #eee;
+  width: 300px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .led h3, .tivi h3, .air-conditioner h3 {
+    color: #4949ce;
+    font-size: 24px; }
+  .led i, .tivi i, .air-conditioner i {
+    font-size: 80px;
+    margin-bottom: 10px; }
+  .led button, .tivi button, .air-conditioner button {
+    border: none;
+    background: none;
+    border-radius: 5px;
+    padding: 4px;
+    background: #333333;
+    transition: all 0.5s;
+    color: white; }
+    .led button:hover, .tivi button:hover, .air-conditioner button:hover {
+      background: red; }
+
+h1 {
+  color: red;
+  font-size: 20px; }

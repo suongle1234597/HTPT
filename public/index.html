@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script> -->
+  <script src="../js/HTPT.js"></script>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/HTPT.css">
+  <title>Các Hệ thống phân tán</title>
+</head>
+
+<body>
+  <div class="control">
+    <div class="led">
+      <h3>LED 1</h3>
+      <i class="far fa-lightbulb led1"></i>
+      <h1 class="lightStatus1"></h1>
+      <button class="lightButton1">ON / OFF</button>
+    </div>
+
+    <div class="led">
+      <h3>LED 2</h3>
+      <i class="far fa-lightbulb led2"></i>
+      <h1 class="lightStatus2"></h1>
+      <button class="lightButton2">ON / OFF</button>
+    </div>
+
+    <div class="led">
+      <h3>LED 3</h3>
+      <i class="far fa-lightbulb led3"></i>
+      <h1 class="lightStatus3"></h1>
+      <button class="lightButton3">ON / OFF</button>
+    </div>
+  </div>
+
+  <div class="chart">
+    <div id="chart-container">
+      <svg width="90px" height="90px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling"
+        style="background: none;">
+        <circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}"
+          ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#ce5d49" stroke-width="9" r="33" stroke-dasharray="155.50883635269477 53.83627878423159"
+          transform="rotate(324 50 50)">
+          <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s"
+            begin="0s" repeatCount="indefinite"></animateTransform>
+        </circle>
+      </svg>
+    </div>
+  </div>
+
+</body>
+
+</html>

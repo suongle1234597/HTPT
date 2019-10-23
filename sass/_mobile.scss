@@ -1,0 +1,32 @@
+//mixin giong ham
+//khai bao kich thuoc cua cac thiet bi
+
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@mixin rs-xs {
+    @media (max-width: $xs) {
+        //se viet css trong content
+        @content 
+    }
+};
+
+@mixin rs-sm {
+    @media (min-width: $xs) {
+        @content 
+    }
+};
+
+@mixin rs-md {
+    @media (min-width: $sm) {
+        @content 
+    }
+};
+
+@mixin rs-lg {
+    @media (min-width: $md) {
+        @content 
+    }
+};

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/0609bt.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formwrapper flex">
+        <form action="">
+            <h1>Tip Calculator</h1>
+            <p>How much was your bill?</p>
+            <div class="cost flex">
+                <span>$</span>
+                <input class="gia" type="text" placeholder="Bill Amount">
+            </div>
+            <p>How was your service?</p>
+            <select  name="" id="" class="tip">
+                <optgroup label="--Choose an Option--">
+                    <!-- <option value=" --Choose an Option-- " selected></option> -->
+                    <option value="30">30% - Outstanding</option>
+                    <option value="20">20% - Good</option>
+                    <option value="15">15% - It was OK</option>
+                    <option value="10">10% - Bad</option>
+                    <option value="5">5% - Terrible</option>
+                </optgroup>
+            </select>
+            
+            <p>How many people are sharing the bill?</p>
+            <div class="people flex">
+                <input class="nguoi" type="text" placeholder="Number of people">
+                <span>people</span>
+            </div>
+            <button class="tinh">Calculate</button>
+            <div class="money flex">
+                <span>$</span>
+                <div class="pay">0.00</div>
+                <span>each</span>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://fb.me/react-0.14.3.js"></script>
+    <script src="https://fb.me/react-dom-0.14.3.js"></script>
+    <script src="js/0609bt.js"></script>
+</body>
+</html>
